@@ -82,6 +82,7 @@
     <body>
         <img src="img/dukes.png" style="width:225px;height:200px">
         <h1><center>JMU Scheduling Form</center></h1>
+        If a class meets at multiple times during the week please add each time as a separate class
         <form id='classSchedule' method='post' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
             <table id="ClassTable">
                 <thead>
