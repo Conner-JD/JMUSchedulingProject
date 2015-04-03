@@ -7,7 +7,25 @@ html {
 		linear-gradient(rgba(155, 89, 182, 0.2), rgba(196, 128, 0, 0.3)), 
 		url('http://thecodeplayer.com/uploads/media/gs.png');
 }
+.ChangeEID {
+    margin:0px; padding:0px;
+    width: 30%;
+    border: 0px solid #ffffff;
+}
+.ChangeEID tr:first-child td{
+	background:-o-linear-gradient(bottom, #ffffff 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff) );
+	background:-moz-linear-gradient( center top, #ffffff 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff");	background: -o-linear-gradient(top,#ffffff,ffffff);
 
+	background-color:#ffffff;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
 body {
     margin: 0 auto;
     padding: 2em 2em 4em;
@@ -34,6 +52,9 @@ p.buttons {
     alignment-adjust: middle;
 }
 
+p.eIDBox {
+    width: 100px;
+}
 
 h1, h2 {
     color: #222;
@@ -98,14 +119,6 @@ table#ClassTable th	{
     border: black;
     color: white;
 }
-hr.style-1 {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-}
 
 input[type="text"] {
   padding: 10px;
@@ -123,22 +136,3 @@ input[type="text"].focus {
 
 /* Gradient transparent - color - transparent */
 		
-
-
-@-webkit-keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-    }
-}
-
-@keyframes colorize {
-    0% {
-        filter: grayscale(100%);
-    }
-    100% {
-        filter: grayscale(0%);
-    }
-}

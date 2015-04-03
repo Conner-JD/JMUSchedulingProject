@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 
+function changeEID(){
+    var jac = document.getElementById('jac');
+    
+    jac.disabled = false;   
+}
 
 function deleteRow(row) {
     var i = row.parentNode.parentNode.rowIndex;
@@ -65,27 +70,27 @@ function insRow() {
     
     var inp6 = new_row.cells[6].getElementsByTagName('input')[0];
     inp6.id += len;
-    inp6.name = "class[" + len + "][day][m]";
+    inp6.name = "class[" + len + "][m]";
     inp6.checked = false;
     
     var inp7 = new_row.cells[6].getElementsByTagName('input')[1];
     inp7.id += len;
-    inp7.name = "class[" + len + "][day][t]";
+    inp7.name = "class[" + len + "][t]";
     inp7.checked = false;
     
     var inp8 = new_row.cells[6].getElementsByTagName('input')[2];
     inp8.id += len;
-    inp8.name = "class[" + len + "][day][w]";
+    inp8.name = "class[" + len + "][w]";
     inp8.checked = false;
     
     var inp9 = new_row.cells[6].getElementsByTagName('input')[3];
     inp9.id += len;
-    inp9.name = "class[" + len + "][day][th]";
+    inp9.name = "class[" + len + "][th]";
     inp9.checked = false;
     
     var inp10 = new_row.cells[6].getElementsByTagName('input')[4];
     inp10.id += len;
-    inp10.name = "class[" + len + "][day][f]";
+    inp10.name = "class[" + len + "][f]";
     inp10.checked = false;
     
     var delButton = new_row.cells[8].getElementsByTagName('input')[0];
